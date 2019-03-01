@@ -1,3 +1,3 @@
 <?php
-   echo "<p>This is a test, again!</p>";
+   echo "<p>HELLO!</p>";
 ?>
