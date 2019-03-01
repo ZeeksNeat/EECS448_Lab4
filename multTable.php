@@ -9,10 +9,10 @@ function multTable() {
 
     echo "<table>";
 
-    for ($i = 0; $i <= 100; $i++) {
+    for ($i = 1; $i <= 100; $i++) {
         echo "<tr> ";
 
-        for ($j = 0; $j <= 100; $j++) {
+        for ($j = 1; $j <= 100; $j++) {
             echo "<td> ";
             echo $i * $j;
             echo "</td>";
