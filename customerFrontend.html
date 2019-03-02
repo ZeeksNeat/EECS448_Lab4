@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript" src = "formChecker.js">
+        </script>
+
+        <link href = "style.css" rel="stylesheet" type="text/css"/>
+
+        <title>
+            Shopping!
+        </title>
+        <h1>DBZ Shop</h1>
+    </head>
+    <body>
+
+        <form action = "customerBackend.php" method = "GET" id = "shop" onsubmit = "return checkForm()">
+        
+            <div class = "item">
+
+                <p class="itemName">Goku Figurine</p>
+                <p class="itemPrice">$10.00</p> <br><br>
+                <img src = "goku_figure.jpg" id = "goku" height = 300 /><br>
+                <input type="number" name="gokuQuantity" id="gQuantity" value=0>
+                <br>
+
+            </div>
+        
+            <div class = "item">
+
+                <p class="itemName">DBZ Season Collection</p>
+                <p class="itemPrice">$30.00</p> <br><br>
+                <img src = "season_collection.jpg" id = "seasons" height = 300 /><br>
+                <input type="number" name="seasonQuantity" id="sQuantity" value=0>
+                <br>
+    
+            </div>
+
+            <div class = "item">
+
+                <p class="itemName">Dragonball Fighter Z Video Game</p>
+                <p class="itemPrice">$60.00</p> <br><br>
+                <img src = "fighter_z.jpg" id = "game" height = 300 /><br>
+                Steam
+                <input type="number" name="steamQuantity" id="steamQuantity" value=0>
+                Xbox One
+                <input type="number" name="xboxQuantity" id="xboxQuantity" value=0>
+                PS4
+                <input type="number" name="ps4Quantity" id="ps4Quantity" value=0>
+                <br>
+    
+            </div>
+
+            <div class = "order">
+
+                <br>Shipping:<br>
+                <input type = "radio" name = "shipping" id = "s1" value = "free"> Free - 7 Days <br>
+                <input type = "radio" name = "shipping" id = "s2" value = "3day"> $5.00 - 3 Days <br>
+                <input type = "radio" name = "shipping" id = "s3" value = "overnight"> $50.00 - Overnight <br>
+                
+                <br>Username:<br>
+                <input type = "email" name = "username" id = "user">
+                <br>Password:<br>
+                <input type = "password" name = "password" id = "pass">
+
+                <br>
+                <input type = "submit" value = "Submit Form">
+                <br>
+                <button type = "reset" value = "Reset">Clear Order</button>
+            
+            </div>
+        </form>
+    </body>
+</html>
